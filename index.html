@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <title>TWOOING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+
+  </style>
+</head>
+
+<body>
+  <!-- sidebar -->
+  <div class="sidebar">
+    <!-- logo -->
+    <h1 class="logo">Twooing</h1>
+    <!-- listofmenus -->
+    <div class="sidebar-menus">
+      <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+      <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+      <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+      <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notifications</a>
+      <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact Us</a>
+      <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+
+    </div>
+    <!-- logout -->
+    <div class="sidebar-login">
+      <a href="registration.php" id="l1"><ion-icon name="log-in-outline"></ion-icon>Log In</a>
+
+    </div>
+  </div>
+  <!-- main-part -->
+  <div class="main">
+    <!-- main header -->
+    <div class="main-navbar">
+      <!-- menu when appear on mobile version -->
+      <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+      <!-- search bar -->
+      <div class="search">
+        <input type="text" placeholder="What do you want to eat">
+        <button class="search-btn">Search</button>
+      </div>
+      <!-- profile icon on left side of navbar -->
+      <div class="profile">
+        <button id="view-cart"><ion-icon name="cart-outline"></ion-icon></button>        
+        <a href="#" class="user"><ion-icon name="person-outline"></ion-icon></a>
+      </div>
+    </div>
+    <!-- main highlight -->
+    <div class="main-highlight">
+      <!-- title section and arrow -->
+      <div class="main-header">
+        <div class="main-title">
+          Recommendations
+        </div>
+        <div class="main-arrow">
+          <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+          <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+        </div>
+      </div>
+      <!-- highlight menu -->
+      <div class="highlight-wrapper">
+        <div class="highlight-card" >
+          <img src="chow.jpeg" alt="chowmein" class="highlight-img">
+          <div class="highlight-desc">
+            <h4>Chowmein</h4>
+            <p>Rs. 100</p>
+          </div>
+        </div>
+        <div class="highlight-card" style="animation-delay: 2s;">
+          <img src="coffee.jpeg" alt="coffee" class="highlight-img">
+          <div class="highlight-desc">
+            <h4>Coffee</h4>
+            <p>Rs. 50</p>
+          </div>
+        </div>
+        <div class="highlight-card" style="animation-delay: 4s;">
+          <img src="pizza.jpeg" alt="pizza" class="highlight-img">
+          <div class="highlight-desc">
+            <h4>Pizza</h4>
+            <p>Rs. 160</p>
+          </div>
+        </div>
+        <div class="highlight-card" style="animation-delay: 6s;">
+          <img src="burger.jpeg" alt="burger" class="highlight-img">
+          <div class="highlight-desc">
+            <h4>Burger</h4>
+            <p>Rs. 85</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main segment/order -->
+    <div class="main-menus">
+      <!-- filter section -->
+      <div class="main-filter">
+        <div>
+          <h2 class="main-title">
+            Menu<br> Category
+          </h2>
+          <div class="main-arrow">
+            <ion-icon class="back-menus" name="chevron-back-circle-outline"></ion-icon>
+            <ion-icon class="next-menus" name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="filter-wrapper">
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="restaurant-outline"></ion-icon>
+            </div>
+            <p>All Menus</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="fast-food-outline"></ion-icon>
+            </div>
+            <p>Burger</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="pizza-outline"></ion-icon>
+            </div>
+            <p>Pizza</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="wine-outline"></ion-icon>
+            </div>
+            <p>Wine</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="ice-cream-outline"></ion-icon>
+            </div>
+            <p>Ice-Cream</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="cafe-outline"></ion-icon>
+            </div>
+            <p>Coffee</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="fish-outline"></ion-icon>
+            </div>
+            <p>Fish</p>
+          </div>
+          <div class="filter-card">
+            <div class="filter-icon">
+              <ion-icon name="nutrition-outline"></ion-icon>
+            </div>
+            <p>Others</p>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <!-- list of food menus -->
+      <div class="main-detail">
+        <h2 class="main-title">
+          Choose Order
+        </h2>
+        <div class="detail-wrapper">
+          <div class="detail-card">
+            <img src="seafood.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Prawn</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 99</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Prawn" data-price="99">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="detail-card">
+            <img src="pizza.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Pizza</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 160</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Pizza" data-price="160">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="detail-card">
+            <img src="burger.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Burger</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 85</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Burger" data-price="85">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="detail-card">
+            <img src="chow.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Chowmein</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 100</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Chowmein" data-price="100">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="detail-card">
+            <img src="soup.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Soup</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 99</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Soup" data-price="99">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="detail-card">
+            <img src="momo.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Momo</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 49</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Momo" data-price="49">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="detail-card">
+            <img src="healthy.jpeg" alt="Sea Food" class="detail-img">
+            <div class="detail-desc">
+              <div class="detail-name">
+                <h4>Rice bowl</h4>
+                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione.</p>
+                <p class="price">Rs. 89</p>
+              </div>
+              <!-- add to cart option -->
+              <div class="item" data-name="Rice Bowl" data-price="89">
+                <button class="add-to-cart">Add 2 Cart</button>
+            </div>
+              <ion-icon class="detail-favourites" name="bookmark-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup with script -->
+  <!-- Popup container -->
+  <div id="popup" class="popup-container">
+    <div class="popup-content">
+      <h2>Sign Up with Google</h2>
+      <button id="login">Sign Up with Google</button>
+    </div>
+  </div>
+  <!-- script for firebase auth -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import {getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCGjM6YpPdHNm_uCA6upIe3IXrL9Z3syW4",
+      authDomain: "abcd-64055.firebaseapp.com",
+      projectId: "abcd-64055",
+      storageBucket: "abcd-64055.appspot.com",
+      messagingSenderId: "73026865615",
+      appId: "1:73026865615:web:b6e0927abbfb71c66aeaba"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+
+    const login = document.getElementById("login");
+    // const logout = document.getElementById("logout");
+    // const msg = document.getElementById("msg");
+
+    const userLogIn = async () => {
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const user = result.user
+          console.log(user);
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message
+        })
+    }
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        console.log("You have signed in")
+      } else {
+
+      }
+    })
+
+    login.addEventListener('click', userLogIn);
+
+  </script>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+
+</html>
